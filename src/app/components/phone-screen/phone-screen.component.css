@@ -1,0 +1,95 @@
+.mainS {
+    border-radius: 10px;
+    width: 95%;
+    min-width: 95%;
+    height: 90%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 3%;
+    position: absolute;    
+    transition: opacity 2s;
+    overflow: hidden;
+}
+    .mainSImg {
+        background-image: url('https://i.pinimg.com/originals/0c/96/b1/0c96b19dc89ffdaa7ff737cfc04a095f.png');        
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .mainSColor {
+        background-color: white;
+    }
+.off {
+    z-index: 0 !important;
+    opacity: 0 !important;
+    display: none !important;
+}
+.on {
+    z-index: 4 !important;
+    opacity: 1.0 !important;
+    display: block !important;
+}
+    .actualScreen {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .googleLoad {
+        width: 96%;
+        height: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+        overflow: hidden;
+    }
+    .actualScreen {
+        transition: opacity 1s;
+    }
+    .googleLoad {
+        position: absolute;
+        background-image: url('http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c51f.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+        .serviceBar {
+            width: 100%;
+            height: 4%;
+            margin-top: 0.5%;
+        }
+        .serviceBarGH {
+            background-color: #616161 !important;
+        }
+            .notifications {
+                display: inline-block;
+                width: 48%;
+                margin-left: 1.5%
+            }
+                .notifications > * {
+                    cursor: pointer;
+                    margin: 1%;
+                }
+                .notificationsGH > * {
+                    color: white !important;
+                }
+                .notifications > *:hover {
+                    transform: scale(1.2);
+                }
+            .service {
+                display: inline-block;
+                width: 48%;
+                margin-right: 1.5%
+            }
+                .service > * {
+                    float: right;
+                    margin: 1%;
+                }
+                .serviceGH > * {
+                    color: white !important;
+                }
+                .service > *:hover {
+                    cursor: none;
+                    /* transform: scale(1.2); */
+                }
+        .screenView {
+            width: 100%;
+            height: 96%;
+        }

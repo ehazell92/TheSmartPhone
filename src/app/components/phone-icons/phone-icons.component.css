@@ -1,0 +1,52 @@
+.phIcons {
+    height: 98%;
+    margin: 2%;
+}
+.gHub {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.phIcons > div {
+    float: left;
+    width: 24%;
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 9%;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    filter: saturate(80%);
+}
+    .phIcons > div:nth-child(3):hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        filter: saturate(100%);
+    }
+    .phIcons > div:nth-child(1), div:nth-child(5) {
+        margin-left: 2%;
+    }
+    .phIcons > div:nth-child(4), div:nth-child(8) {
+        margin-right: 2%;
+    }
+    .phIcons > div:nth-child(1) {
+        background-image: url('http://localhost:4200/assets/images/icons/1.png');
+    }
+    .phIcons > div:nth-child(2) {
+        background-image: url('http://localhost:4200/assets/images/icons/2.png');
+    }
+    .phIcons > div:nth-child(3) {
+        background-image: url('http://localhost:4200/assets/images/icons/3.png');
+    }
+    .phIcons > div:nth-child(4) {
+        background-image: url('http://localhost:4200/assets/images/icons/4.png');
+    }
+    .phIcons > div:nth-child(5) {
+        background-image: url('http://localhost:4200/assets/images/icons/5.png');
+    }
+    .phIcons > div:nth-child(6) {
+        background-image: url('http://localhost:4200/assets/images/icons/6.png');
+    }
+    .phIcons > div:nth-child(7) {
+        background-image: url('http://localhost:4200/assets/images/icons/7.png');
+    }

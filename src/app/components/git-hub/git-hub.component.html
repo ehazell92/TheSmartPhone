@@ -1,0 +1,34 @@
+<div class="gitHub">
+
+  <div class="menuBar">
+    <div>
+      <i class="material-icons">menu</i>
+      <span>PocketHub</span>
+      <i class="material-icons">search</i>
+    </div>
+    <div>
+      <span>NEWS</span>
+      <span>REPOSITORIES</span>
+      <span>FOLLOWERS</span>
+      <span>FOLLOWING</span>
+    </div>
+  </div>
+
+  <div class="repoList" *ngIf="repositories">
+    <div *ngFor="let repo of repositories" class="theRepo">
+        <div class="repoIcon">
+          <i class="material-icons repoIco">book</i>
+        </div>
+        <div class="repoTxt">
+          <p class="repoTitle">{{repo.Title}}</p>
+          <p class="repoDesc">{{repo.Description}}</p>
+          <p class="repoStats">
+            {{repo.Type}}
+            <i class="material-icons">star_half</i> {{repo.Stars}}
+            <i class="material-icons">device_hub</i> {{repo.Forks}}
+          </p>
+        </div>
+    </div>
+  </div>
+
+</div>

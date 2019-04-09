@@ -1,0 +1,23 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div #mainS class="mainS off mainSColor">
+  <div #gLoad class="googleLoad on"></div>
+  <div #aScreen class="actualScreen off">
+
+    <div class="serviceBar">
+      <div class="notifications">
+        <i class="material-icons">message</i>
+        <i class="material-icons">email</i>
+        <i class="material-icons">vpn_key</i>
+      </div>
+      <div class="service">
+        <i class="material-icons">battery_full</i>
+        <i class="material-icons">network_cell</i>
+        <i class="material-icons">bluetooth</i>
+      </div>
+    </div>
+    <div class="screenView">
+      <app-phone-icons *ngIf="!isLoaded" (isLoad)="isLoadChange(isLoad)" ></app-phone-icons>
+      <app-git-hub *ngIf="isLoaded" ></app-git-hub>
+    </div>    
+  </div>
+</div>
